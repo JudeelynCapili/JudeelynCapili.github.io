@@ -1,48 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio - Judeelyn Capili</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judeelyn Capili - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Judeelyn Capili 👋</h1>
-    <p>Aspiring Computer Scientist | Web Developer</p>
-  </header>
+    <!-- Animated background particles -->
+    <div class="particles">
+        <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="particle" style="left: 20%; animation-delay: 1s;"></div>
+        <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+        <div class="particle" style="left: 40%; animation-delay: 0.5s;"></div>
+        <div class="particle" style="left: 50%; animation-delay: 1.5s;"></div>
+        <div class="particle" style="left: 60%; animation-delay: 2.5s;"></div>
+        <div class="particle" style="left: 70%; animation-delay: 3s;"></div>
+        <div class="particle" style="left: 80%; animation-delay: 3.5s;"></div>
+        <div class="particle" style="left: 90%; animation-delay: 4s;"></div>
+    </div>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">JC</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm currently a 2nd-year Computer Science student passionate about coding,
-      problem solving, and building creative projects. 🚀
-    </p>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-greeting">Hi, I'm</div>
+            <h1 class="hero-name">Judeelyn Capili</h1>
+            <div class="hero-title">
+                <span class="typing-text">Aspiring Computer Scientist</span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Passionate about coding, problem-solving, and building creative digital solutions 🚀
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Portfolio Website</strong> - This site you’re looking at!</li>
-      <li><strong>E-Commerce App</strong> - Built with Flutter for class project</li>
-      <li><strong>OpenGL 2D Drawing</strong> - Coding graphics in VS Code</li>
-    </ul>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm currently a <strong>2nd-year Computer Science student</strong> with an insatiable curiosity for technology and innovation.
+                    </p>
+                    <p>
+                        My journey in computer science began with a fascination for how code can transform ideas into reality. I thrive on challenges that push me to think creatively and develop elegant solutions to complex problems.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">💻</div>
+                            <h4>Web Development</h4>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📱</div>
+                            <h4>Mobile Development</h4>
+                            <p>Flutter, Dart</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎨</div>
+                            <h4>Graphics Programming</h4>
+                            <p>OpenGL, 2D/3D Graphics</p>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🧠</div>
+                            <h4>Problem Solving</h4>
+                            <p>Algorithms, Data Structures</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:judeelyncapili@example.com">judeelyncapili@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/JudeelynCapili" target="_blank">github.com/JudeelynCapili</a></p>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🌐</div>
+                        <h3>Portfolio Website</h3>
+                    </div>
+                    <p class="project-description">
+                        A modern, responsive portfolio website showcasing my skills and projects. Built with HTML, CSS, and JavaScript featuring smooth animations and interactive elements.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Live</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
 
-  <footer>
-    <p>© 2025 Judeelyn Capili. All rights reserved.</p>
-  </footer>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🛒</div>
+                        <h3>E-Commerce App</h3>
+                    </div>
+                    <p class="project-description">
+                        A full-featured mobile e-commerce application developed with Flutter. Includes user authentication, product catalog, shopping cart, and payment integration.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Demo</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎨</div>
+                        <h3>OpenGL 2D Graphics</h3>
+                    </div>
+                    <p class="project-description">
+                        Interactive 2D graphics application using OpenGL. Features custom shapes, animations, and user interactions. Developed in VS Code with modern C++ practices.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">OpenGL</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Graphics</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Demo</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always excited to collaborate on interesting projects or discuss new opportunities. Feel free to reach out!
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:judeelyncapili@example.com" class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>judeelyncapili@example.com</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/JudeelynCapili" target="_blank" class="contact-method">
+                        <div class="contact-icon">💻</div>
+                        <div class="contact-info">
+                            <h4>GitHub</h4>
+                            <p>github.com/JudeelynCapili</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Judeelyn Capili. Crafted with passion and code.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Typing animation
+        const typingText = document.querySelector('.typing-text');
+        const texts = ['Aspiring Computer Scientist', 'Web Developer', 'Problem Solver', 'Creative Coder'];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeText() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+            }
+
+            const typingSpeed = isDeleting ? 50 : 100;
+            setTimeout(typeText, typingSpeed);
+        }
+
+        // Start typing animation
+        setTimeout(typeText, 1000);
+
+        // Scroll indicator
+        window.addEventListener('scroll', () => {
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            if (window.scrollY > 100) {
+                scrollIndicator.style.opacity = '0';
+            } else {
+                scrollIndicator.style.opacity = '1';
+            }
+        });
+    </script>
 </body>
 </html>
